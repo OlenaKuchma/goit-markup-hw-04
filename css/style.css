@@ -9,6 +9,8 @@
   --color-cloud: #f4f4fd;
   --color-navy-blue-modal: #2e2f42;
   --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
 }
 
 p,
@@ -153,7 +155,8 @@ img {
   background-color: var(--color-navy-blue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,13 +204,14 @@ img {
 }
 
 .feature-item {
-  max-width: 264px;
-}
+  width: calc((100% - 72px) / 4);
+  
+  }
 
 .feature-list {
-  display: flex;
-  justify-content: space-between;
-}
+    display: flex;
+    gap: 24px;
+  }
 
 .feature-title {
   font-weight: 500;
@@ -216,6 +220,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   margin-bottom: 8px;
+  
 }
 
 .feature-text {
@@ -225,6 +230,17 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
+
+.feature-icon {
+  background-color: var(--color-cloud);
+  width: 100%;
+  
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+
 
 /* -------------doing-------------- */
 .doing {
@@ -265,7 +281,6 @@ img {
 .team-item-wrap {
   padding: 32px 0;
   background-color: #ffffff;
-  
 }
 
 .team-title {
@@ -296,28 +311,71 @@ img {
 }
 
 .team-soc-list {
-display: flex;
-justify-content: center;
-margin-top: 8px;
-gap: 24px;
-
-
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 24px;
 }
 .team-soc-item {
-width: 40px;
-height: 40px;
-
+  width: 40px;
+  height: 40px;
 }
 
 .team-soc-link {
-  width: 100%;
+width: 100%;
   height: 100%;
   border-radius: 50%;
   display: block;
   background-color: var(--color-iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.team-soc-link:is(:hover, :focus) {
+  background-color: var(--color-green);
+}
 
+.team-soc-icon {
+  fill: var(--color-cloud);
+}
+
+/* -------customers--------- */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  margin-bottom: 84px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-slate);
+  border-radius: 5px;
+  fill: var(--color-slate);
+}
+
+.customers-link:is(:hover, :focus) {
+  border: 1px solid var(--color-ocean);
+  fill: var(--color-ocean);
+}
 
 /* ------filters--------- */
 
