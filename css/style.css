@@ -322,7 +322,7 @@ img {
 }
 
 .team-soc-link {
-width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   display: block;
@@ -442,6 +442,11 @@ width: 100%;
 }
 
 /* ----------footer----------- */
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
 .footer-wrap {
   max-width: 264px;
 }
@@ -472,4 +477,52 @@ width: 100%;
 
 .footer-logo-color {
   color: var(--color-cloud);
+}
+
+.footer-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;  
+  color: var(--color-white);
+}
+
+
+.footer-soc-list {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5));
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-cloud);
+ 
+}
+
+.footer-soc-link:is(:hover, :focus) {
+  background-color: var(--color-green);
+
+  
+  }
+
+.footer-soc-wrap {
+  display: block;
+align-items: ;
+  max-width: 208px;
+  
+  
+  
 }
