@@ -489,12 +489,13 @@ img {
 
 .footer-soc-list {
   display: flex;
-  margin-top: 16px;
   gap: 16px;
 }
 .footer-soc-item {
   width: 40px;
   height: 40px;
+  margin-bottom: 24px;
+  
 }
 
 .footer-soc-link {
@@ -509,18 +510,18 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--color-cloud);
- 
+  
 }
 
 .footer-soc-link:is(:hover, :focus) {
   background-color: var(--color-green);
 
-  
   }
 
 .footer-soc-wrap {
-  display: block;
-align-items: ;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   max-width: 208px;
   
   
