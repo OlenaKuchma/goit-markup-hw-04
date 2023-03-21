@@ -418,10 +418,7 @@ img {
 }
 .row-wrap {
   background-color: #ffffff;
-  border-left: 1px solid var(--color-cornflower);
-  border-right: 1px solid var(--color-cornflower);
-  border-bottom: 1px solid var(--color-cornflower);
-  
+    
 }
 .row-item {
   width: calc((100% - 48px) / 3);
@@ -452,6 +449,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
+
+.row-text-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 1px solid var(--color-cornflower);
+  border-right: 1px solid var(--color-cornflower);
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
+
 
 /* ----------footer----------- */
 
